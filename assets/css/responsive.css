@@ -1,5 +1,5 @@
 /* MOBILE AND TABLET  */
-@media (max-width:1024px){
+@media (max-width:1200px){
     :root{
         --header-height:68px;
         --navbar-height:0;
@@ -8,9 +8,6 @@
     .row-my-5{
         margin-left: 5px;
         margin-right:5px;
-    }
-    .mobile-category{
-        display: block;
     }
     .hide-on-mobile-tablet{
         display: none;
@@ -63,7 +60,7 @@
         padding:2rem 1.2rem 1rem 1.2rem;
     }
     .header__cart-icon-number{
-        top:10px;
+        top:8px;
     }
     .header__sort-bar{
         display: flex;
@@ -119,7 +116,7 @@
         top:var(--header-height);
         left: 0;
         right:0;
-        height: 46px;
+        height: 40px;
         z-index: 1;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 20%);
         padding:4px 6px;
@@ -140,7 +137,7 @@
         width: 100%;
         top:calc(100% + 10px)
     }
-    
+    .mobile-category{display: block;}
     /* PAGINATION */
     .shopee-page-controller__list{
         align-items: center;
@@ -175,7 +172,7 @@
 }
 
 /* TABLET  */
-@media (min-width:740px) and (max-width:1023px){
+@media (min-width:740px) and (max-width:1199px){
     .tb-0{
         display: none;
     }
@@ -204,5 +201,8 @@
     }
     .header__cart-info-container{
         justify-content: space-between;
+    }
+    .app__container{
+        margin-top: 100px;
     }
 }
