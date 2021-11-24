@@ -1,0 +1,208 @@
+/* MOBILE AND TABLET  */
+@media (max-width:1024px){
+    :root{
+        --header-height:68px;
+        --navbar-height:0;
+        --header-with-search-height:68px;
+    }
+    .row-my-5{
+        margin-left: 5px;
+        margin-right:5px;
+    }
+    .mobile-category{
+        display: block;
+    }
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .header{
+        position: fixed;
+        z-index: 1;
+        top:0;
+        right: 0;
+        left: 0;
+    }
+    .header-with-search{
+        margin: 0 3rem;
+    }
+    .header-with-search__middle-section{
+        background-color: #fff;
+    } 
+    .header__mobile-search{
+        display: block;
+    }
+    .header__mobile-search-icon{
+        padding:0 4rem 0 3rem;
+    }
+    .header__search-label__option{
+        z-index: 1;
+    }
+    .header__cart{
+        max-width: 12rem;
+        display: flex;
+        justify-content:flex-end;
+    }
+    
+    .app__container{
+        margin-top: var(--header-height);
+    }
+    .nav{
+        display: none;
+    }
+    /* PHẦN CART  */
+    .header__cart-list{
+        position:fixed;
+        top:var(--header-height);
+        right:0;
+        width: 100%;
+    }
+    .header__cart-list::before{
+        display: none;
+    }
+    .header__cart-icon-container{
+        padding:2rem 1.2rem 1rem 1.2rem;
+    }
+    .header__cart-icon-number{
+        top:10px;
+    }
+    .header__sort-bar{
+        display: flex;
+    }
+    
+}
+/* MOBILE  */
+@media (max-width:739px){
+    html{
+        font-size: 50%;
+    }
+    .mb-0{
+        display: none;
+    }
+    .mb-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .mb-12{
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    .row-my-5{
+        margin-left:0;
+        margin-right:0;
+    }
+    .hide-on-mobile{
+        display: none;
+    }
+    
+    .header-with-search{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0;
+        height: var(--header-with-search-height);
+        max-width: 100%;
+    }
+    .header__logo{
+        align-self: center;
+        width:18.2rem;
+    }
+    .header__cart{
+        max-width: unset;
+        width: unset;
+    }
+    .header__cart-icon-block{
+        padding: 0;
+    }
+    /* PHẦN INPUT SEARCH  */
+    .header-with-search__middle-section{
+        position: fixed;
+        top:var(--header-height);
+        left: 0;
+        right:0;
+        height: 46px;
+        z-index: 1;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 20%);
+        padding:4px 6px;
+        display: none;
+        
+        animation: floatDown linear 0.3s;
+    }
+    .header__search{
+        border: 2px solid #e5e5e5;
+    }
+    .header__mobile-search-icon {
+        padding: 0px 5rem 0 0rem;
+    }
+    .header__mobile-search-checkbox:checked~.header-with-search__middle-section{
+        display: flex;
+    }
+    .header__search-history{
+        width: 100%;
+        top:calc(100% + 10px)
+    }
+    
+    /* PAGINATION */
+    .shopee-page-controller__list{
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .shopee-page-controller__item{
+        min-width:20px;
+        height: 20px;
+        margin: 0 5px;
+    } 
+    .shopee-page-controller__item--prev,
+    .shopee-page-controller__item--next{
+        margin:0 5px
+    }
+    .shopee-page-controller__link{
+        font-size: 1.4rem;
+    }
+    /* PHẦN SẢN PHẨM  */
+    .shopee-product-item__reward {
+        padding: .2rem .4rem .2rem;
+    }
+    .shopee-product-item__price-number{
+        font-size: 1.4rem;
+    }
+    .shopee-product-item__price--old{
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 40%;
+    }
+}
+
+/* TABLET  */
+@media (min-width:740px) and (max-width:1023px){
+    .tb-0{
+        display: none;
+    }
+    .tb-4{
+        flex: 0 0 calc(100% /3);
+        max-width: calc(100% / 3);
+    }
+    .tb-12{
+        flex: 0 0 100%;
+        max-width:100%;
+    }
+    .hide-on-tablet{
+        display: none;
+    }
+    .header__logo{
+        width:18rem;
+    }
+    .header__logo-section{
+        width:13rem;
+    }
+    .header__cart-list{
+        padding:0 16px;
+    }
+    .header__cart-item{
+        max-width: 100%;
+    }
+    .header__cart-info-container{
+        justify-content: space-between;
+    }
+}
